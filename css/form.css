@@ -52,6 +52,7 @@ main div {
 
 .lgpd p {
     font-size: 12px;
+    line-height: 1.3;
     color: #6c6969;
 }
 
@@ -66,7 +67,8 @@ main div {
 
 .check_1, .check_2 {
     font-size: 13px;
-
+    display: flex;
+    align-items: center;
 }
 
 
@@ -77,8 +79,8 @@ h2 {
 
 
 button {
-    width: 200px;
-    height: 40px;
+    width: 150px;
+    height: 35px;
     margin-right: 8px;
     float: right;
     transition: transform 0.3s ease-out;
@@ -91,3 +93,12 @@ button {
 .titulo {
     margin-left: 8px;
 }
+
+.desabilitado, .desabilitado:hover  {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+
+

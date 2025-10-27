@@ -18,10 +18,14 @@ class contato {
 let form = document.getElementById("form");
 
 form.addEventListener('submit', function(event) {
-        event.preventDefault()
-        Post(form)
+        event.preventDefault();
+        Post(form);
         form.reset();
+        btnAtivo = document.getElementById("btnEnviar");
+        btnAtivo.disable = true;
+        btnAtivo.classList.toggle("desabilitado");
     });
+
 
 function Post(form) {
 
@@ -32,7 +36,7 @@ function Post(form) {
     form.elements.namedItem("telefone").value, 
     form.elements.namedItem("meioContato").value);
     
-    dadosDoCliente.push(data)
+    dadosDoCliente.push(data);
     
     console.log(dadosDoCliente[0]);
     
@@ -49,3 +53,16 @@ function Enviar() {
     }
 
 }
+
+function desabilitado(oncheck){
+    const btnAtivo = document.getElementById('btnEnviar');
+
+    if (oncheck.checked) {
+        btnAtivo.disabled = false;
+        btnAtivo.classList.remove("desabilitado");
+    } else {
+        btnAtivo.disable = true;
+        btnAtivo.classList.toggle("desabilitado");
+    }
+}
+

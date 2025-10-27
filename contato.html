@@ -80,23 +80,32 @@
               <option>SOLICITAÇÃO</option>
             </select>
             <div class="lgpd">
-                <p>
-                    Os dados serão mantidos em nossa base de dados, só enquanto for
-                    desejado por você. A qualquer momento, será possível editar ou
-                    remover tais dados. <a href="https://www.ford.com.br/politica-de-privacidade/" target="_blank">Termos e Condições</a>
-                </p>
+              <p>
+                Os dados serão mantidos em nossa base de dados, só enquanto for
+                desejado por você. A qualquer momento, será possível editar ou
+                remover tais dados.
+                <a
+                  href="https://www.ford.com.br/politica-de-privacidade/"
+                  target="_blank"
+                  >Termos e Condições</a
+                >
+              </p>
             </div>
             <div class="checkboxs">
-                <div class="check_1">
-                    <input type="checkbox" class="checkbox_LGPD" />
-                    <label for="">Sim. Li e concordo com os Termos e Condições</label>
-                </div>
-                <div class="check_2">
-                    <input type="checkbox" class="checkbox_LGPD" />
-                    <label for="">Sim. Também quero receber descontos e novidades.</label>
-                </div>
+              <div class="check_1">
+                <input type="checkbox" onchange="desabilitado(this)" class="checkbox_LGPD" />
+                <label for=""
+                  >Sim. Li e concordo com os Termos e Condições</label
+                >
+              </div>
+              <div class="check_2">
+                <input type="checkbox" class="checkbox_LGPD" />
+                <label for=""
+                  >Sim. Também quero receber descontos e novidades.</label
+                >
+              </div>
             </div>
-            <button type="submit" id="btnEnviar">Enviar</button>
+            <button type="submit" disabled id="btnEnviar" class="desabilitado">Enviar</button>
           </form>
         </div>
       </div>
